@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Job
+metadata:
+  labels: 
+    app: script
+    type: API
+  spec: 
+    containers: 
+      - name: zad1
+      image: zad1:1.0
+      command: ['sh', 'kristina.sh']
+      restartPolicy: OnFailure 
