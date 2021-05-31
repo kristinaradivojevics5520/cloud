@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Job
+metadata:
+  labels: 
+    app: nginx
+    type: WebServer
+  spec: 
+    containers: 
+      - name: index.html
+      image: index.html:1.0
+      restartPolicy: OnFailure 
